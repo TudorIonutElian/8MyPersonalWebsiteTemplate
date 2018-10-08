@@ -6,9 +6,105 @@
 body {
     width: 100vw;
     height: 100vh;
+    background-color: #10578D;
+}
+#container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 /* ----- Container Header CSS Rules -----*/
-
+#container-header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    height: 20%;
+    padding-top: 80px;
+}
+#container-header .header-logo {
+    width: 50%;
+    height: 100px;
+    background-color: #03080c;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-left: 30px;
+}
+.header-logo h1,
+.header-logo h4 {
+    color: #fff;
+}
+.header-logo h1 {
+    text-transform: uppercase;
+}
+.header-logo h1 span {
+    color: #fcf805;
+}
 /* ----- Container Body CSS Rules -----*/
 
+#container-body {
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    padding-right: 30px;
+}
+
+.body-left {
+    width: 20%;
+    padding-top: 60px;
+}
+
+.left-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+.left-menu li {
+    display: block;
+    text-align: center;
+    padding: 10px;
+}
+.left-menu li.active {
+    background-color: #052e88;
+}
+.left-menu li:first-of-type {
+    color: #ffff;
+    font-size: 18px;
+    font-weight: bold;
+}
+.left-menu li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #ffff;
+}
+
+.body-right {
+    width: 80%;
+    background-color: #fff;
+    padding: 30px;
+}
+.article-heading h2 {
+    color: #1452d8;
+    margin-bottom: 10px;
+}
+.article-heading p {
+    text-align: justify;
+    margin-bottom: 10px;
+}
+.heading-list ul {
+    list-style: none;
+    padding-left: 30px;
+    color: #1452d8; 
+}
+.heading-list ul li {
+    margin: 10px 0;
+
+}
 /* ----- Container Footer CSS Rules -----*/
